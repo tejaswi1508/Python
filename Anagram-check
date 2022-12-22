@@ -1,0 +1,17 @@
+import numpy as np 
+
+st1 = "@#$%&"
+st2 = "@&$%#"
+
+if len(st1) != len(st2):
+    print("not anagrams")
+else:
+    st1_arr = np.array(st1)
+    st2_arr = np.array(st2)
+    n1 = sorted(st1)
+    n2 = sorted(st2)
+    if n1 == n2:
+        print("anagrams")
+    else:
+        print("no")
+   
